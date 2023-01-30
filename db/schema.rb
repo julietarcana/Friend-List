@@ -17,8 +17,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_29_092705) do
     t.string "email"
     t.string "phone"
     t.string "instagram"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
 end
+ 
