@@ -6,5 +6,8 @@
 
 <div>
   <%= link_to "Show this friend", @friend, class:"btn btn-primary" %> 
+
+<%= link_to 'Delete', @friend, method: :delete, data: { turbo_method: :delete, turbo_confirm: 'are you sure?' }, class:"btn btn-danger" %>
+
   <%= link_to "Back to friends", friends_path, class:"btn btn-outline-primary" %>
 </div>
